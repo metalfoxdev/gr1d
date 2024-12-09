@@ -1,0 +1,398 @@
+<!--
+
+    0h h1! 
+    by Martin Kool
+    (c) 2020 Q42
+    http://q42.com | @q42
+
+-->
+<!doctype html>
+<html class="signed-out">
+  <head>
+    <title>gr1d</title>
+    <meta name="description" content="A little logic game by Q42." />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+    <meta name="format-detection" content="telephone=no">
+    <meta charset="utf-8">
+
+    <link rel="icon" type="image/png" href="img/icon-1024.png" />
+    <link rel="shortcut icon" href="img/icon-1024.png" />
+    <link rel="apple-touch-icon-precomposed" href="img/icon-1024.png"/>
+    <meta name="apple-itunes-app" content="app-id=id936504196">
+    
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"/>
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@q42" />
+    <meta name="twitter:creator" content="@mrtnkl" />
+    <meta name="twitter:title" content="0h h1" />
+    <meta name="twitter:description" content="A little logic game by Q42." />
+    <meta name="twitter:image" content="http://0hh1.com/img/twitter-promotion.png" />
+    <meta name="twitter:url" content="http://0hh1.com/" />
+
+    <meta property="og:url" content="http://0hh1.com/" />
+    <meta property="og:site_name" content="0h h1" />
+    <meta property="og:title" content="0h h1" />
+    <meta property="og:description" content="A little logic game by Q42." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="http://0hh1.com/img/facebook-promotion.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+
+    <style>html,body{background:#222;}</style>
+    <link href="css/style.css" type="text/css" rel="stylesheet" />
+    <link href="css/theme2.css" type="text/css" rel="stylesheet" />
+    <link href="css/theme3.css" type="text/css" rel="stylesheet" />
+    <link href="css/theme4.css" type="text/css" rel="stylesheet" />
+    <link href="css/theme5.css" type="text/css" rel="stylesheet" />
+    <link href="fonts/fonts.css" type="text/css" rel="stylesheet" />
+  </head>
+  <body bgcolor="#222222">
+    <div id="container">
+        <div id="grain"></div>
+        <div id="gameContainer">
+        <div id="title" class="screen show01 hide0 hide1 hidehs" data-action="close-titleScreen">
+            <div class="vertical">
+                <h1>Oh hi</h1>
+                <div id="titlegrid" class="board">
+                    <div id="digits">                    
+                        <span id="zero">0</span><span id="hs"> h h </span><span id="one">1</span>
+                    </div>
+<table data-grid="titlegrid" cellpadding="0" cellspacing="0"><tbody><tr><td class="odd"><div class="tile tile-2"><div class="inner"></div></div></td><td class="even"><div class="tile tile-1"><div class="inner"></div></td></tr></tbody></table>
+
+                </div>
+                <p>
+                  <text>A little logic game</text><br><text class="by by1">By Q42</text><br><text class="by by2">Created by Martin Kool</text><br><img id="q42" src="img/q42.png">
+                </p>
+            </div>
+        </div>
+
+        <div id="menu" class="screen">
+            <div class="vertical">
+            <h2>Oh hi</h2>
+                <p data-action="tutorial">
+                <text>How to play</text>
+                </p>
+                <p data-action="play" data-config="unlimited">
+                <text data-config="playLabelPlay">Play</text>
+                <text data-config="playLabelFree">Free play</text>
+                </p>
+                <p data-action="play-daily" data-config="daily" class="rel">
+                <span class="new" data-config="newLabel"><text>New</text></span>
+                <text>Today's puzzles</text>    
+                </p>
+                <p data-action="settings">
+                <text>Settings</text>
+                </p>
+                <p data-action="about">
+                <text>About</text>
+                </p>
+                <p data-action="thanks">
+                <text>Thanks</text>
+                </p>
+            </div>
+            <div id="bar">
+                <div class="iconcon" data-action="playcenter"><div id="playcenter" class="icon"></div></div>
+            </div>
+        </div>
+
+        <div id="about" class="screen text" data-action="rules">
+            <div class="vertical">
+            <h3><text>About</text></h3>
+            <div class="side-padded">
+                <p>
+                <text>0h h1 is a little logic game<br>by Q42. It was created by<br>Martin Kool.</text>
+                <br>
+                <br>
+                <text>The concept is also known<br>as Takuzu or Binary Sudoku.</text>
+                <br>                
+                <img id="q42" src="img/q42.png"><br>
+                <text class="web-link">Q42.com</text> &middot; <span class="web-link">0hh1.com</span>
+                </p>
+                </div>
+            </div>
+            <div id="bar">
+                <div class="iconcon"><div id="continue" class="icon"></div></div>
+            </div>
+        </div>
+
+        <div id="rules" class="screen text" data-action="end-rules">
+            <div class="vertical">
+            <h3><text>Rules</text></h3>
+                <div class="side-padded">
+                <p>
+                    <text>Three adjacent tiles of the same color in a row or column isn't allowed.</text>
+                </p>
+                <p>
+                    <text>Rows and columns have an equal number of each color.</text>
+                </p>
+                <p>
+                    <text>No two rows and no two columns are the same.</text>
+                </p>
+                </div>
+            </div>
+            <div id="bar">
+                <div class="iconcon"><div id="continue" class="icon"></div></div>
+            </div>
+        </div>
+
+        <div id="thanks" class="screen text" data-action="afterThanks">
+            <div class="vertical">
+            <h3><text>Thanks</text></h3>
+                <div class="side-padded">
+                <p>
+                    <text>Thank you for supporting<br> 0h h1</text>.
+                </p>
+                <p>
+                    <text>Please feel free to leave me a message about the game anytime</text>!
+                </p>
+                <p>
+                    Martin<br>
+                    martin@q42.nl<br>
+                    @mrtnkl
+                </p>
+                </div>
+            </div>
+            <div id="bar">
+                <div class="iconcon"><div id="continue" class="icon"></div></div>
+            </div>
+        </div>
+
+        <div id="apps" class="screen text" data-action="games">
+            <div class="vertical">
+            <h3><text>Apps</text></h3>
+                <div class="side-padded">
+                <p>
+                    <text>The 0h h1 app is also free</text>:
+                </p>
+                <p>
+                    <a target="_blank" href="https://itunes.apple.com/us/app/0h-h1/id936504196?mt=8">iOS</a>
+                </p>
+                <p>
+                    <a target="_blank" href="https://play.google.com/store/apps/details?id=com.q42.ohhi">Android</a>
+                </p>
+                </div>
+            </div>
+            <div id="bar">
+                <div class="iconcon"><div id="continue" class="icon"></div></div>
+            </div>
+        </div>
+
+        <div id="games" class="screen text" data-action="back">
+            <div class="vertical">
+            <h3><text>Games</text></h3>
+                <div class="side-padded">
+                <p>
+                    <text>Enjoy our other games too</text>!
+                </p>
+                <p>
+                    <a target="_blank" href="#" id="game_link_0hn0">0h n0</a>
+                </p>
+                <p>
+                    <a target="_blank" href="https://duomoji.com" target="_system">Duomoji</a>
+                </p>
+                <p>
+                    <a target="_blank" href="#" id="game_link_contranoid">Contranoid</a>
+                </p>
+                <p>
+                    <a target="_blank" href="#" id="game_link_quento">Quento</a>
+                </p>
+                <p>
+                    <a target="_blank" href="#" id="game_link_numolition">Numolition</a>
+                </p>
+                </div>
+            </div>
+            <div id="bar">
+                <div class="iconcon"><div id="back" class="icon"></div></div>
+            </div>
+        </div>
+
+        <div id="message" class="screen text" data-action="back">
+            <div class="vertical">
+                <div class="side-padded">
+                <p id="message-body">
+                    <text>This is a message</text>.
+                </p>
+                </div>
+            </div>
+        </div>
+
+        <div id="loading" class="screen">
+            <div class="vertical">
+                <h2><text>Loading</text></h2>
+                <p></p>
+                <div id="loadinggrid" class="board">
+<table data-grid="loadinggrid" cellpadding="0" cellspacing="0"><tbody><tr><td class="odd"><div class="tile tile-2 loading"><div class="inner"></div></div></td></tr></tbody></table>
+</div>
+            </div>
+        </div>
+
+        <div id="game" class="screen">
+            <p id="hintMsg" class="topMsg"></p>
+            <p id="chooseSize" class="topMsg"><text>Select a size to play...</text></p>
+            <h2 id="boardsize"></h2>
+            <div id="board" class="vertical board"></div>
+
+            <div id="share">
+                <p><text>If you ❤️ 0h h1, sharing with friends really helps us grow!</text></p>
+                <div id="share-message">
+                🟦🟥 I played 0h h1 💪<br>
+                🟥🟦 It's fun, free and has no ads!
+                </div>
+                <p>
+                    <span class="button color-blue" data-action="share"><text>Share</text></span>
+                    &nbsp;&nbsp;
+                    <span class="link" data-action="hide-share"><text>Continue</text></span>
+                </p>
+                <p id="donate" class="small">
+                    <text>Or consider a small one time</text> <span class="link" data-action="toggleDonate"><text>donation</text></span>.
+                </p>
+            </div>
+
+
+            <div id="menugrid" class="vertical board hidden">
+<table data-grid="menugrid" cellpadding="0" cellspacing="0"><tbody>
+<tr>
+<td class="odd"><div class="tile tile-2"><div data-action="startGame" data-size="1" data-gridsize="4" class="inner"></div></div></td>
+<td class="even"><div class="tile tile-1"><div data-action="startGame" data-size="2" data-gridsize="6" class="inner"></div></div></td>
+<td class="odd"><div class="tile tile-2"><div data-action="startGame" data-size="3" data-gridsize="8" class="inner"></div></div></td>
+</tr>
+
+<tr>
+<td class="even"><div class="tile tile-1"><div data-action="startGame" data-size="4" data-gridsize="10" class="inner"></div></div></td>
+<td class="odd"><div class="tile tile-2"><div data-action="gift" data-size="5" data-gridsize="12" class="inner gift"></div></div></td>
+<td class="odd"><div class="tile tile-1"><div data-action="games" data-value="sizes" class="inner">...</div></div></td>
+</tr>
+
+ </tbody></table>
+            </div>
+
+            <div id="score">
+                <span id="scorelabel"><text>Score</text></span><span id="scorenr">42</span><br>
+                <span id="gamesplayedlabel"><text>Played</text></span><span id="gamesplayednr">4200</span><br>
+            </div>
+            <span id="times">
+                <div id="time">
+                    <span id="timer">
+                        <span id="minutes-l" class="digit"></span>
+                        <span id="minutes-r" class="digit"></span>
+                        <span>:</span>
+                        <span id="seconds-l" class="digit"></span>
+                        <span id="seconds-r" class="digit"></span>
+                    </span>
+                    <span id="percentage"><span class="sep"> &middot; </span><span class="value">100%</span></span>
+                </div>
+            </span>
+            <div id="bar">
+                <div class="iconcon" data-action="back"><div id="back" class="icon"></div></div>
+                <div class="iconcon" data-action="achievements"><div id="achievements" class="icon"></div></div>
+                <div class="iconcon" data-action="leaderboards"><div id="leaderboards" class="icon"></div></div>
+                <div class="iconcon" data-action="undo"><div id="undo" class="icon"></div></div>
+                <a class="iconcon" id="tweeturl" target="_blank" href="about:blank" data-link="social" data-action="tweet"><span id="tweet" class="icon"></span></a>
+                <div class="iconcon" data-action="help"><div id="help" class="icon"></div></div>
+                <div class="iconcon" data-action="settings"><div id="cog" class="icon"></div></div>
+                <div class="iconcon" data-action="about"><div id="rules" class="icon"></div></div>
+                <div class="iconcon" data-action="continue"><div id="continue" class="icon"></div></div>
+            </div>
+        </div>
+
+        <div id="online" class="screen text">
+            <div class="vertical">
+            <h3>Google<br>Play</h3>
+                <div class="status-signed-in side-padded">
+                    <p>
+                        <text>You are currently signed in</text>.
+                    </p>
+                    <p data-action="sign-out">
+                        <span class="link"><text>Sign out</text></span>
+                    </p>
+                </div>
+                <div class="status-signed-out side-padded">
+                    <p>
+                        <text>Sign in to unlock fun achievements, earn experience points and compete with friends in leaderboards</text>.
+                    </p>
+                    <p data-action="sign-in">
+                        <span class="link"><text>Sign in</text></span>
+                    </p>
+                </div>
+            </div>
+            <div id="bar">
+                <div class="iconcon" data-action="back"><div id="back" class="icon"></div></div>
+                <div class="iconcon" data-action="achievements"><div id="achievements" class="icon"></div></div>
+                <div class="iconcon" data-action="leaderboards"><div id="leaderboards" class="icon"></div></div>
+            </div>
+        </div>
+        
+        <div id="settings" class="screen text" data-action="back">
+            <div class="vertical">
+                <h3><text>Settings</text></h3>
+                <div class="side-padded">
+                    <p id="toggleDontae" class="setting">
+                        <span data-action="toggleDonate" data-value="1"><text>0h h1 is worth a $</text></span>
+                        <span id="toggleDonateValue" class="link" data-action="toggleDonate"><text>No</text></span>
+                    </p>
+                    <p class="setting">
+                        <span data-action="toggleTimeTrial" data-value="1"><text>Show elapsed time</text></span>
+                        <span id="toggleTimeTrialValue" class="link" data-action="toggleTimeTrial"><text>No</text></span>
+                    </p>
+                    <p class="setting">
+                        <span data-action="toggleHintIcon" data-value="1"><text>Show hint icon</text></span>
+                        <span id="toggleHintIcon" class="link" data-action="toggleHintIcon"><text>Yes</text></span>
+                    </p>
+                    <p class="setting">
+                        <span data-action="toggleFastIntro" data-value="1"><text>Fast intro</text></span>
+                        <span id="toggleFastIntroValue" class="link" data-action="toggleFastIntro"><text>No</text></span>
+                    </p>
+                    <p data-config="languageSwitch" class="setting">
+                        <span data-action="toggleLanguage"><text>Language</text></span>
+                        <span id="toggleLanguage" class="link" data-action="toggleLanguage"></span>
+                    </p>
+                    <div class="pick-theme pick-theme-1" data-config="colorTheme">
+                        <p class="setting">
+                            <span data-action="color-theme" data-value="1"><text>Color theme</text></span>
+                            <span class="link" data-action="color-theme" data-value="1">0h h1</span>
+                        </p>
+                    </div>
+                    <div class="pick-theme pick-theme-2" data-config="colorTheme">
+                        <p class="setting">
+                            <span data-action="color-theme" data-value="2"><text>Color theme</text></span>
+                            <span class="link" data-action="color-theme" data-value="2">0h n0</span>
+                        </p>
+                    </div>
+                    <div class="pick-theme pick-theme-3" data-config="colorTheme">
+                        <p class="setting">
+                            <span data-action="color-theme" data-value="3"><text>Color theme</text></span>
+                            <span class="link" data-action="color-theme" data-value="3">Contranoid</span>
+                        </p>
+                    </div>
+                    <div class="pick-theme pick-theme-4" data-config="colorTheme">
+                        <p class="setting">
+                            <span data-action="color-theme" data-value="4"><text>Color theme</text></span>
+                            <span class="link" data-action="color-theme" data-value="4">High contrast</span>
+                        </p>
+                    </div>
+                    <div class="pick-theme pick-theme-5" data-config="colorTheme">
+                        <p class="setting">
+                            <span data-action="color-theme" data-value="5"><text>Color theme</text></span>
+                            <span class="link" data-action="color-theme" data-value="5">Ukraine</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div id="bar">
+                <div class="iconcon" data-action="back"><div id="back" class="icon"></div></div>
+            </div>
+        </div>
+        
+        </div>
+
+    </div>
+    <div id="feelsize"><span id="hiddendigit">5</span></div>
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery-2.1.0.min.js"><\/script>')</script>
+    <script type="text/javascript" src="js/0hh1.js"></script>
+  </body>
+</html>

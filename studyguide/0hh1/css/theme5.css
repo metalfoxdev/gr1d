@@ -1,0 +1,34 @@
+.theme5 .pick-theme { display: none; }
+.theme5 .pick-theme-5 { display: block; }
+
+.theme5 .tile-2 .inner,
+.theme5 #nextdot {
+	background-color: #0059be !important;
+}
+.theme5 .tile-1 .inner,
+.theme5 #nextdot.red {
+	background-color: #ffd500 !important;
+}
+.theme5 .tile-1 .inner {
+	color: #312901 !important;
+}
+.theme5 .tile-1 .inner.promo-duomoji {
+	background-color: transparent !important;
+}
+.theme5 #apps a, 
+.theme5 #ohhi a, 
+.theme5 .link, 
+.theme5.web .web-link,
+.theme5 #message a, 
+.theme5 #games a {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: solid #ffd500 2px;
+}
+.theme5 button.color-blue {
+  background: #ffd500;
+  color: #333;
+}
+.theme5 .button.color-red {
+  background: #0059be;
+}

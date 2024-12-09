@@ -1,0 +1,136 @@
+/* 
+$blue #30A7C2
+$red #D55336
+*/
+.theme4,
+.theme4 body,
+.theme4 #container {
+  background: #fff;
+  color: #333;
+}
+.theme4 .board {
+  background: #fff;
+}
+.theme4 h1,
+.theme4 h2,
+.theme4 h3,
+.theme4 p {
+  color: #333;
+}
+html.theme4 body .tile .inner {
+	border-radius: 4px !important;
+}
+html.theme4 body .tile .inner:after {
+	display: none;
+}
+.theme4 body .tile .inner.done:before {
+  width: 25px; height: 25px; right: -6px; top: -8px;
+  border-radius: 25px !important;
+  border: none;
+}
+.theme4 .tile .inner,
+.theme4 .tile.tile- .inner {
+	background-color: #eee;
+}
+.theme4 .tile-2 .inner,
+.theme4 #nextdot {
+	background-color: #fff !important;
+	border: solid #333 2px;
+}
+.theme4 .tile-1 .inner,
+.theme4 #nextdot.red {
+	background-color: #333 !important;
+	border: solid #333 2px;
+}
+.theme4 .show01 #titlegrid .inner { border: none !important;}
+
+.theme4 #board .tile-1 .inner:before,
+.theme4 #board .tile-2 .inner:before {
+	position: absolute;
+	left: 0; top: 0; right: 0; bottom: 0;
+	font-family: 'Josefin Sans', sans-serif;
+	text-align: center;
+}
+.theme4 #board .tile-1 .inner:before { /*content: '0';*/ color: #fff;  }
+.theme4 #board .tile-2 .inner:before { /*content: '1';*/  }
+
+.theme4 .tile .inner:after {
+	border-color: #fff;
+}
+.theme4 #score,
+.theme4 #donate {
+	color: #000;
+}
+.theme4 #score.show,
+.theme4 #bar .icon,
+.theme4 #time {
+	opacity: .4;
+}
+.theme4 #timer {
+	color: #000;
+}
+.theme4 .tile.marked .inner {
+	border: solid #000 2px;
+  -webkit-animation: flashdark 2s ease-in-out infinite;
+  -moz-animation: flashdark 2s ease-in-out infinite;
+  -ms-animation: flashdark 2s ease-in-out infinite;
+  animation: flashdark 2s ease-in-out infinite;
+}
+
+.theme4 #menugrid .inner { color: #333; }
+.theme4 #menugrid .tile-1 .inner { color: #fff; }
+
+.theme4 #back.icon { background-image: url(../img/black/close.png); }
+.theme4 #retry.icon { background-image: url(../img/black/loop.png); }
+.theme4 #undo.icon { background-image: url(../img/black/history.png); }
+.theme4 #help.icon { background-image: url(../img/black/eye.png); }
+.theme4 #next.icon { background-image: url(../img/black/arrow-right.png); }
+.theme4 #tweet.icon { background-image: url(../img/black/twitter.png); }
+.theme4 #facebookicon.icon { background-image: url(../img/black/facebook.png); }
+.theme4 #rules.icon { background-image: url(../img/black/question.png); }
+.theme4 #continue.icon { background-image: url(../img/black/play.png); }
+.theme4 #apps.icon { background-image: url(../img/black/mobile.png); }
+.theme4 #achievements.icon { background-image: url(../img/black/achievements.png); }
+.theme4 #leaderboards.icon { background-image: url(../img/black/leaderboards.png); }
+.theme4 #stopwatch.icon { background-image: url(../img/black/stopwatch.png); }
+.theme4 #cog.icon { background-image: url(../img/black/cog.png); }
+.theme4 #playcenter.icon { background-image: url(../img/black/controller.png); }
+.theme4.signed-in #playcenter.icon { background-image: url(../img/black/controller.png); }
+.theme4 #board .tile.system:after { background-image: url(../img/black/lock.png); }
+
+.theme4.signed-in #playcenter.icon { opacity: 1;}
+.theme4.ios #playcenter.icon { opacity: 1;}
+.theme4.signed-in.android #playcenter.icon { background-image: url(../img/controller-green.png); }
+.theme4.signed-out.android #playcenter.icon { opacity: .3; }
+
+
+.theme4 .pick-theme { display: none; }
+.theme4 .pick-theme-4 { display: block; }
+
+.theme4 #menugrid .inner.gift {
+  background-position: 50% 44%;
+}
+.theme4 .show01 h1, 
+.theme4 .show01 p {
+  color: transparent;
+}
+.theme4 .show01 #digits #zero,
+.theme4 .show01 #digits #one,
+.theme4 #digits #hs {
+  color: #000; 
+}
+.theme4 .hide0 #digits #zero { color: transparent; }
+.theme4 .hide1 #digits #one { color: transparent; }
+.theme4 .hidehs #digits #hs { 
+  color: transparent; 
+}
+.theme4 .finalanim #digits span {
+  color: transparent !important;
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+  transition: none !important;
+}
+.theme4 #lovie .lovieimg {   
+  background-image: url(../img/lovie.png);
+}
